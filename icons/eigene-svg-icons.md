@@ -4,6 +4,8 @@ description: Hier eine kurze Anleitung bezüglich SVG Files in Gutenberg.
 
 # Eigene SVG Icons
 
+### Eigenes SVG
+
 Falls du ein Icon in Gutenberg einbauen möchtest, ist es empfohlen dies als Funktion  abzuspeichern, um sie dann in anderen Dateien zu importieren zu können. 
 
 Wichtig ist, dass das SVG JSV konform ist. Dafür gibt es einen tollen Generator, der wirklich das abdeckt und dir ein sauberes kompatibles SVG liefert.   
@@ -41,7 +43,7 @@ export function icon() {
  }
 ```
 
-### SVG WordPress Gutenberg Component 
+### WordPress SVG Component
 
 Gutenberg hat schon eine interne SVG Function, die du verwenden kannst:   
 Weitere Informationen findest du in der offiziellen Doku.   

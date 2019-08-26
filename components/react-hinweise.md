@@ -54,3 +54,9 @@ Dort gibt es zahlreiche Anwendungsbeispiele.
 [Hier geht es zur Seite.](https://reactjs.org/docs/fragments.html)
 {% endhint %}
 
+### Component
+
+Wenn du die Standard Variante von WordPress verwenden möchtest und nicht direkt das React Component, dann solltest du diese Möglichkeit verwenden. 
+
+`import { Component } from '@wordpress/element';`
+
