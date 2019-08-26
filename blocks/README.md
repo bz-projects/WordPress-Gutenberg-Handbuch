@@ -12,7 +12,7 @@ Vergess nicht beim Enque deiner JavaScript Datei alle Abhängigkeiten zu aktivie
 
 Über JavaScript JSX geht das so:
 
-```text
+```jsx
 // Importiere deine Variable / Komponenten
 import { __ } from '@wordpress/i18n'; 
 import { registerBlockType } from '@wordpress/blocks';
