@@ -7,5 +7,6 @@
 * [Icons](icons/README.md)
   * [WordPress Dashicons](icons/wordpress-dashicons.md)
   * [FontAwesome 5 Icons](icons/fontawesome-5-icons.md)
+  * [Eigene SVG Icons](icons/eigene-svg-icons.md)
 * [Kontakt & Impressum](kontakt-and-impressum.md)
 
