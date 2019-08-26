@@ -7,7 +7,7 @@ description: >-
 
 # FontAwesome 5 Icons
 
-```text
+```javascript
 const FontAwesomeIcons =  {
     'Font Awesome 5': [
         "fab fa-500px",

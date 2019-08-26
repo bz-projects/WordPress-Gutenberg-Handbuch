@@ -21,7 +21,7 @@ In Gutenberg gibt es dafür extra ein Komponent.
 
 Du musst ganz einfach den Tag `<Fragment>`  öffnen und deinen Inhalt bzw. Komponenten schreiben und dann wie in HTML wieder schließen. 
 
-```text
+```jsx
 <Fragment>
     <h2>Dein Inhalt</h2>
 </Fragment>
@@ -33,7 +33,7 @@ Seitens React gibt es auch eine noch einfachere Lösung. Es basiert auf der Eben
 
 **Normale Fragment Variante:** 
 
-```text
+```jsx
    <React.Fragment>
          <h2>TestInhalt</h2>
     </React.Fragment>
@@ -41,7 +41,7 @@ Seitens React gibt es auch eine noch einfachere Lösung. Es basiert auf der Eben
 
 #### Einfache Fragment Variante
 
-```text
+```jsx
   <> //Das ist dein Fragment! 
     <h2>TestInhalt</h2>
   </>  //Fragment Ende  

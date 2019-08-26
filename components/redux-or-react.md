@@ -26,13 +26,13 @@ Das Package "**wp.data**" wird standardmäßig von Gutenberg mitgeliefert. Dort 
 
 Als erstes importieren wir uns die Funktion **dispatch** von dem Package "**wp.data**".
 
-```text
+```javascript
 import { dispatch } from '@wordpress/data';
 ```
 
 Mit dieser Funktion können wir die **States** verändern bzw. manipulieren.  
 
-```text
+```jsx
 <Button onClick={ ( event ) => {  dispatch('core/edit-post').closeGeneralSidebar()  }   }>
     Sidebar schließen
 </Button>
@@ -43,7 +43,7 @@ Von der Konsole aus kann man dieses Script verwenden:
 
 #### Gutenberg Sidebar aufklappen mittels React  
 
-```text
+```jsx
 <Button onClick={ ( event ) => {  dispatch('core/edit-post').openGeneralSidebar('edit-post/document')  }   }>
     Sidebar öffnen
 </Button>
@@ -58,4 +58,32 @@ Von der Konsole aus kann man dieses Script verwenden:
 {% hint style="info" %}
 Weitere tolle Hooks findest du hier: [https://github.com/WordPress/gutenberg/tree/master/packages/edit-post](https://github.com/WordPress/gutenberg/tree/master/packages/edit-post)
 {% endhint %}
+
+### Withstate \| React State Funktion
+
+In React wird in einem Class Component ein State Objekt geschrieben mit Zuweisungen.  
+Diese dienen als Default zum Arbeiten. Beispiel: **HeadlineActive: false** 
+
+WordPress bietet diese Funktion auch direkt im Core an und diese heißt WithState. Die Schreibweise ist etwas seltsam, aber zum effektiven Arbeiten lohnt sich dies. Ich persönlich arbeite direkt mit den internen WordPress Attributen.   
+  
+Diese sind in meiner Meinung nach effektiver, weil WordPress ständig Revisionen machen und alle Eingaben direkt speichert. Dies kann natürlich auf Zeit so einigen Datenmüll erzeugen. Aber dafür gibt es gute WordPress Cleaning Tools. Aber dafür freuen sich die User, falls der PC ausging oder der Browser abstürzt die geschriebenen Inhalte immer noch da sind.   
+  
+**Hier ein Beispiel mit WithSate:** 
+
+```jsx
+import { CheckboxControl } from '@wordpress/components';
+import { withState } from '@wordpress/compose';
+ 
+const MyCheckboxControl = withState( {
+    isChecked: true,
+} )( ( { isChecked, setState } ) => (
+    <CheckboxControl
+        heading="User"
+        label="Is author"
+        help="Is the user a author or not?"
+        checked={ isChecked }
+        onChange={ ( isChecked ) => { setState( { isChecked } ) } }
+    />
+) );
+```
 

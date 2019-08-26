@@ -7,7 +7,7 @@ description: >-
 
 # WordPress Dashicons
 
-```text
+```javascript
 const WordPressDashIcons =  {
     'WordPress Dashicons': [
       'dashicons dashicons-admin-appearance',

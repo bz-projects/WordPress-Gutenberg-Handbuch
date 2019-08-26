@@ -13,7 +13,7 @@ Wichtig ist, dass das SVG JSV konform ist. Dafür gibt es einen tollen Generator
 
 #### Hier ein Beispiel: 
 
-```text
+```jsx
 export function icon() {
 
     /* 
@@ -50,7 +50,7 @@ Weitere Informationen findest du in der offiziellen Doku.
   
 [Hier geht es zur Doku!](https://github.com/WordPress/gutenberg/tree/master/packages/components/src/primitives/svg)
 
-```text
+```jsx
 import { G, Path, SVG } from '@wordpress/components';
 
 const MyIcon = () => (
