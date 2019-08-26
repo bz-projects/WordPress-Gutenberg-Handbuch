@@ -10,5 +10,7 @@
   * [Eigene SVG Icons](icons/eigene-svg-icons.md)
 * [Components](components/README.md)
   * [React Hinweise](components/react-hinweise.md)
+  * [Option Settings](components/option-settings.md)
+  * [Redux \| React](components/redux-or-react.md)
 * [Kontakt & Impressum](kontakt-and-impressum.md)
 
