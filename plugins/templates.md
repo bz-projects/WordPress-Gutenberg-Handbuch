@@ -1,5 +1,7 @@
 ---
-description: Das ist die POWER von Gutenberg!
+description: >-
+  POWER von Gutenberg. Standard Templates mit vordefinierten Blöcken beim
+  Erstellen anzeigen
 ---
 
 # Templates
