@@ -11,6 +11,7 @@
 * [Plugins & Supports](plugins/README.md)
   * [Option Settings](plugins/option-settings.md)
   * [Custom Styles](plugins/custom-styles.md)
+  * [Transform](plugins/transform.md)
   * [Templates](plugins/templates.md)
   * [Theme Support](plugins/theme-support.md)
   * [Vordefinierte Farben](plugins/vordefinierte-farben.md)
