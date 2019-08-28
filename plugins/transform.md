@@ -23,7 +23,7 @@ import { Fragment } from '@wordpress/element';
 import { createBlock } from '@wordpress/blocks';
 
 // Füge dies innerhalb deiner registerBlockType() Funktion hinzu
-transforms: {
+ transforms: {
 
     // Anderen Block in unseren jetzigen umwandeln.
     from: [
@@ -52,13 +52,10 @@ transforms: {
    to: [
         {
             type: 'block',
-            blocks: [ 'core/heading', 'core/paragraph' ],
+            blocks: [ 'core/heading'],
             transform: ( { headline } ) => {
                 return(
                     createBlock( 'core/heading', {
-                        content: headline
-                    }), 
-                    createBlock('core/paragraph', {
                         content: headline
                     })
                 )
