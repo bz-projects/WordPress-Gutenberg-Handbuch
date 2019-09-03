@@ -29,7 +29,7 @@ Im Gutenberg Editor ändern sich andauert neue Dinge, die die Entwicklung schwie
 
 Derzeit implementiere ich alle nötigen Snippets von Gutenberg in einem Plugin. Installiere dir dafür schon mal Visual Studio Code! Dieser Editor ist meiner Meinung nach extrem gut geworden. Atom und co. können da einpacken :D
 
-[Hier geht es zur Website von VSCode](https://code.visualstudio.com/)
+[WordPress Gutenberg Snippets für den Visual Studios Code herunterladen.](https://marketplace.visualstudio.com/items?itemName=BenjaminZekavica.wordpress-gutenberg-snippets)
 
-Sobald mein Plugin online geht, werdet Ihr das direkt über dieser Dokumentation erfahren.
+![Weitere Updates sollen demn&#xE4;chst folgen mit mehr Snippets ...](.gitbook/assets/bildschirmfoto-2019-09-03-um-12.00.11.png)
 

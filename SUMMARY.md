@@ -1,6 +1,8 @@
 # Table of contents
 
 * [Gutenberg WordPress Handbuch](README.md)
+* [Erweiterungen](erweiterungen/README.md)
+  * [Visual Studio Code \| WP Gutenberg Snippets](erweiterungen/visual-studio-code-or-wp-gutenberg-snippets.md)
 * [Blocks](blocks/README.md)
   * [Standardblocks](blocks/standardblocks.md)
   * [Snippets](blocks/snippets.md)
