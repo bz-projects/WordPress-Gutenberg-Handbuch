@@ -109,6 +109,7 @@ wp.hooks.addFilter( 'editor.BlockEdit', 'core/spacer', override );
 Damit wir die Save Funktion überschreiben können wird empfohlen hier Dynamische Blöcke zu verwenden.  Hier ist es ziemlich einfach, quasi das selbe Spiel wie man gewohnt ist von den Dynamic Blocks. Wichtig ist, dass man weiß, wie die Attribute heißen. Den Code Snippet findest du ganz oben  ausführlich erklärt. 
 
 ```php
+// INT 
 function prwp_seperator_override() {
 	register_block_type( 'core/spacer', array(
         'render_callback' => 'prwp_seperator_override_render',
@@ -127,8 +128,8 @@ add_action( 'init', 'prwp_seperator_override' );
 
 
 // Render 
-function prwp_seperator_override_render( $attributes ) {
-    ob_start(); ?> 
+function prwp_seperator_override_render( $attributes, $content ) {
+    ob_start();?> 
 
         <div <?php if( $attributes['height'] ) echo 'style="height: '. $attributes['height'] .'px " ' ?>
             class="prwp-gutenberg-driver <?php if( $attributes['trenner'] ) echo 'prwp-gutenberg-trenner--open' ?>">
