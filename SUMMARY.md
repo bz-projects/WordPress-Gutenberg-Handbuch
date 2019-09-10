@@ -18,6 +18,7 @@
   * [Theme Support](plugins/theme-support.md)
   * [Vordefinierte Farben](plugins/vordefinierte-farben.md)
   * [Gutenberg Block Kategorie](plugins/gutenberg-block-kategorie.md)
+  * [Vorhandene Blöcke bearbeiten](plugins/vorhandene-bloecke-bearbeiten.md)
 * [Components](components/README.md)
   * [Innerblocks](components/innerblocks.md)
   * [React Hinweise](components/react-hinweise.md)

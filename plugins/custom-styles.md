@@ -59,3 +59,22 @@ isDefault: true
 
 Mittels diesem Befehlen kannst du einen Standard definieren und dieser wird automatisch ausgewählt. Pro Objekt Branch kannst einen CSS/HTML Klasse definieren und einen Label angeben, welcher dann im Backend angezeigt wird. 
 
+### Style deaktivieren
+
+Falls du einen Style entfernen möchtest, kannst du dies so tun: 
+
+```jsx
+// Erster Parameter: Namespace des Blocks mit dem Style  
+// Zweiter Parameter: Style Name 
+
+wp.blocks.unregisterBlockStyle( 'core/quote', 'large' );
+
+// Falls React dies nicht erkennt, verwende die DomReady Funktion
+wp.domReady( function() {
+    wp.blocks.unregisterBlockStyle( 'core/quote', 'large' );
+} );
+```
+
+Weitere besonderen Filter Methoden findest du übrigens hier:   
+[**Gutenberg Handbook**](https://developer.wordpress.org/block-editor/developers/filters/block-filters/) ****
+

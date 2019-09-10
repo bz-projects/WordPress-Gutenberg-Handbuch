@@ -24,9 +24,19 @@ wp.data.select('core/block-editor').getBlocks();
 
 ### Zeigt die aktuell Post Type an
 
-Falls du im Backend auf der jetzigen Seite oder Beitrag die PostType herausfinden möchtest im Code und damit später Conditionals zu erstellen also IF\(\) ... und soweiter, kannst du dieses Snippet verwenden:
+Falls du im Backend auf der jetzigen Seite oder Beitrag die PostType herausfinden möchtest im Code und damit später Conditionals zu erstellen also IF\(\) ... und so weiter, kannst du dieses Snippet verwenden:
 
 ```javascript
 wp.data.select('core/editor').getCurrentPostType();
+```
+
+### Block deaktivieren
+
+Falls du einen Block deaktivieren möchtest, dann kannst du dies so tun. 
+
+```jsx
+wp.domReady( function() {
+    wp.blocks.unregisterBlockType( 'core/verse' );
+} );
 ```
 
