@@ -19,6 +19,7 @@
   * [Vordefinierte Farben](plugins/vordefinierte-farben.md)
   * [Gutenberg Block Kategorie](plugins/gutenberg-block-kategorie.md)
 * [Components](components/README.md)
+  * [Innerblocks](components/innerblocks.md)
   * [React Hinweise](components/react-hinweise.md)
   * [Redux \| React](components/redux-or-react.md)
 * [Kontakt & Impressum](kontakt-and-impressum.md)
