@@ -2,7 +2,7 @@
 description: >-
   Dies ist mein eigenes WP Gutenberg Handbuch zum neuen WordPress Editor. Hier
   in dieser Dokumentation möchte ich mein Wissen mit dir teilen.Hinweise:
-  Benutze "Oben links" die Suche, um nach Funktionen
+  Benutze "Oben links" die Suche, um nach Funktionen.
 ---
 
 # Gutenberg WordPress Handbuch
