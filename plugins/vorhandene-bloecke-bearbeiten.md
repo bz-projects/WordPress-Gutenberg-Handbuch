@@ -63,33 +63,41 @@ In dem HighOrderComponent musst du zwingend einen Parameter mitgeben, sonst werd
 Hier zur Verdeutlichung: 
 
 ```jsx
-const override =  createHigherOrderComponent( ( BlockEdit ) => {
+const override =  createHigherOrderComponent( ( BlockEdit ) => {const override =  createHigherOrderComponent( ( BlockEdit ) => {
     return ( props ) => {
-        return (
+
+        if ( 'core/spacer' === props.name ) {
+           return(
+                <Fragment>
+                    <section className={ props.attributes.trenner === true ? 'prwp-gutenberg-trenner--open' : 'prwp-gutenberg-trenner' }>
+                        <BlockEdit { ...props } />
+                    </section>
+                    <InspectorControls>
+                        <PanelBody title="Trennlinie">
+                            <p>
+                                <small>
+                                    Wollen Sie eine Trennlinie sichtbar machen?
+                                </small>
+                            </p>
+                            <ToggleControl
+                                label="Trennlinie aktivieren"
+                                checked={ props.attributes.trenner }
+                                onChange={ ( boolean ) => {
+                                    props.setAttributes({
+                                        trenner: boolean
+                                    }); 
+                                }}
+                            />
+                        </PanelBody>
+                    </InspectorControls>
+                </Fragment>
+           )
+        }
+        return(
             <Fragment>
-                <section className={ props.attributes.trenner === true ? 'prwp-gutenberg-trenner--open' : 'prwp-gutenberg-trenner' }>
-                    <BlockEdit { ...props } />
-                </section>
-                <InspectorControls>
-                    <PanelBody title="Trennlinie">
-                        <p>
-                            <small>
-                                Wollen Sie eine Trennlinie sichtbar machen?
-                            </small>
-                        </p>
-                        <ToggleControl
-                            label="Trennlinie aktivieren"
-                            checked={ props.attributes.trenner }
-                            onChange={ ( boolean ) => {
-                                props.setAttributes({
-                                    trenner: boolean
-                                }); 
-                            }}
-                        />
-                    </PanelBody>
-                </InspectorControls>
+                <BlockEdit { ...props } />
             </Fragment>
-        );
+        )
     };
 }, "withInspectorControl" );
  
