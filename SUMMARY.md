@@ -20,6 +20,7 @@
   * [Gutenberg Block Kategorie](plugins/gutenberg-block-kategorie.md)
   * [Vorhandene Blöcke bearbeiten](plugins/vorhandene-bloecke-bearbeiten.md)
 * [Components](components/README.md)
+  * [Toolbar](components/toolbar.md)
   * [Innerblocks](components/innerblocks.md)
   * [React Hinweise](components/react-hinweise.md)
   * [Redux \| React](components/redux-or-react.md)
