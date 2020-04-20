@@ -11,6 +11,7 @@
   * [FontAwesome 5 Icons](icons/fontawesome-5-icons.md)
   * [Eigene SVG Icons](icons/eigene-svg-icons.md)
 * [Plugins & Supports](plugins/README.md)
+  * [Block Picker Preview](plugins/block-picker-preview.md)
   * [Block Pattern](plugins/block-pattern.md)
   * [Option Settings](plugins/option-settings.md)
   * [Custom Styles](plugins/custom-styles.md)
