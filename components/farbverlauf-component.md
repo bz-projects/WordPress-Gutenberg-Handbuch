@@ -23,11 +23,6 @@ Als erstes registrieren wir einen neuen Block und geben folgende Attribute mit:
 // GradientColor
 bgGradient:{
     type: 'string'
-},
-
-// GradientTextColor 
-bgGradientTextColor: {
-    type: 'string'
 }
 ```
 
