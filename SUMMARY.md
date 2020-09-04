@@ -22,6 +22,7 @@
   * [Gutenberg Block Kategorie](plugins/gutenberg-block-kategorie.md)
   * [Vorhandene Blöcke bearbeiten](plugins/vorhandene-bloecke-bearbeiten.md)
 * [Components](components/README.md)
+  * [Color Component](components/color-component.md)
   * [Color Palette – CSS Variablen in Gutenberg](components/color-palette-css-variablen-in-gutenberg.md)
   * [Farbverlauf – Component](components/farbverlauf-component.md)
   * [Post Picker](components/post-picker.md)
