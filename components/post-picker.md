@@ -7,11 +7,11 @@ description: >-
 
 # Post Picker
 
-**Vorerst kurze Info**: Dieser Schritt ist nicht für Einsteiger gedacht, denn hier arbeiten wir direkt mit der REST API und mit dem React DOM. 
+**Vorerst kurze Info**: Dieser Schritt ist nicht für Einsteiger gedacht, denn hier arbeiten wir direkt mit der REST API und mit dem React DOM.&#x20;
 
-Was sollen wir bauen? Kurz gesagt eine Auswahlliste und dieser Beitrag wird dann anschließend im Block dargestellt. Dies ist natürlich praktisch wenn man eine Team Auflistung machen möchte mit beliebiger Team Auflistung. 
+Was sollen wir bauen? Kurz gesagt eine Auswahlliste und dieser Beitrag wird dann anschließend im Block dargestellt. Dies ist natürlich praktisch wenn man eine Team Auflistung machen möchte mit beliebiger Team Auflistung.&#x20;
 
-![](../.gitbook/assets/bildschirmfoto-2019-09-11-um-17.28.01.png)
+![](<../.gitbook/assets/Bildschirmfoto 2019-09-11 um 17.28.01.png>)
 
 Nach dem wir unseren Block registriert haben, müssen wir in PHP die WordPress REST API aktivieren. Dies tun wir so. Am besten direkt in der **functions.php** oder in deinem Plug-in.
 
@@ -19,13 +19,13 @@ Nach dem wir unseren Block registriert haben, müssen wir in PHP die WordPress R
 wp_enqueue_script( 'wp-api' );
 ```
 
-Danach habe ich mir überlegt einen ServerSideRender zu tun, denn damit weiß der User automatisch bescheid, was Sache ist und welchen Beitrag der grade bearbeitet. 
+Danach habe ich mir überlegt einen ServerSideRender zu tun, denn damit weiß der User automatisch bescheid, was Sache ist und welchen Beitrag der grade bearbeitet.&#x20;
 
-Innerhalb meines Components erstelle ich mir eine State Methode wie in React üblich, dazu habe ich hier im Handbuch auch einen Beitrag geschrieben und kurz erklärt, wie man die Edit Funktion auslagern kann. 
+Innerhalb meines Components erstelle ich mir eine State Methode wie in React üblich, dazu habe ich hier im Handbuch auch einen Beitrag geschrieben und kurz erklärt, wie man die Edit Funktion auslagern kann.&#x20;
 
 ### Posts herauslesen
 
-Damit wir erstmal die gesamten Beiträge auslesen können, holen wir uns erstmal die gesamten Posts aus der API. Dies tun wir so: 
+Damit wir erstmal die gesamten Beiträge auslesen können, holen wir uns erstmal die gesamten Posts aus der API. Dies tun wir so:&#x20;
 
 ```jsx
 getOptions() {
@@ -37,7 +37,7 @@ getOptions() {
 
 ### Werte in einem Objekt speichern
 
-Was danach kommt ist wir erstellen uns eine Foreach Schleife und fügen alle benötigten Daten dort in einem Array bzw. eigentlich ein Objekt. 
+Was danach kommt ist wir erstellen uns eine Foreach Schleife und fügen alle benötigten Daten dort in einem Array bzw. eigentlich ein Objekt.&#x20;
 
 ```jsx
 let options	= [ { value: 0, label: 'Beitrag auswählen' } ];
@@ -49,13 +49,13 @@ if( this.state.posts.length > 0 ) {
 }
 ```
 
-### Alle Beiträge in einer Auswahlliste 
+### Alle Beiträge in einer Auswahlliste&#x20;
 
-![](../.gitbook/assets/bildschirmfoto-2019-09-11-um-17.40.24.png)
+![](<../.gitbook/assets/Bildschirmfoto 2019-09-11 um 17.40.24.png>)
 
-Jetzt haben wir alles Nötige, um weiterzuarbeiten. Jetzt brauchen wir nur das SelectControl Component von Gutenberg und dort setzten wir die Options hinzu. also ein Label sowie einen Wert. 
+Jetzt haben wir alles Nötige, um weiterzuarbeiten. Jetzt brauchen wir nur das SelectControl Component von Gutenberg und dort setzten wir die Options hinzu. also ein Label sowie einen Wert.&#x20;
 
-Nicht zu vergessen, Attribute erstellen!! Sonst wird beim Auswählen keine PostID abgespeichert. Sie ist sehr wichtig, damit wir später weiterarbeiten können. 
+Nicht zu vergessen, Attribute erstellen!! Sonst wird beim Auswählen keine PostID abgespeichert. Sie ist sehr wichtig, damit wir später weiterarbeiten können.&#x20;
 
 ```jsx
 <SelectControl 
@@ -65,15 +65,15 @@ Nicht zu vergessen, Attribute erstellen!! Sonst wird beim Auswählen keine PostI
 />
 ```
 
-Natürlich kannst du beliebig viele Components verwenden wie du Lustig bist, ist halt am Ende etwas Arbeit :D Ich wollte jetzt zum Beispiel den User die Möglichkeit geben, Dinge ausschalten bzw. einschalten zu können. 
+Natürlich kannst du beliebig viele Components verwenden wie du Lustig bist, ist halt am Ende etwas Arbeit :D Ich wollte jetzt zum Beispiel den User die Möglichkeit geben, Dinge ausschalten bzw. einschalten zu können.&#x20;
 
-### Die Ausgabe \| Render Funktion
+### Die Ausgabe | Render Funktion
 
-Damit wir jetzt nun den Post Rendern können brauchen wir den ServerSideRender. Es ist eine Ansicht die für Edit und die Save Funktion gilt alle beide sehen gleich aus. Es ist halt eine Preview im Backend. 
+Damit wir jetzt nun den Post Rendern können brauchen wir den ServerSideRender. Es ist eine Ansicht die für Edit und die Save Funktion gilt alle beide sehen gleich aus. Es ist halt eine Preview im Backend.&#x20;
 
-![](../.gitbook/assets/bildschirmfoto-2019-09-11-um-17.43.14.png)
+![](<../.gitbook/assets/Bildschirmfoto 2019-09-11 um 17.43.14.png>)
 
-Und wir sind bereit die Ausgabe zu betätigen. Aber mit diesem Code kommen wir nicht weiter. Wir müssen uns jetzt einen Dynamic Block erstellen. Wie üblich in PHP. 
+Und wir sind bereit die Ausgabe zu betätigen. Aber mit diesem Code kommen wir nicht weiter. Wir müssen uns jetzt einen Dynamic Block erstellen. Wie üblich in PHP.&#x20;
 
 ```jsx
 <ServerSideRender
@@ -85,7 +85,7 @@ Und wir sind bereit die Ausgabe zu betätigen. Aber mit diesem Code kommen wir n
 />
 ```
 
-Jetzt in deiner PHP Funktion: 
+Jetzt in deiner PHP Funktion:&#x20;
 
 ```php
 register_block_type('deinnamespace', array(
@@ -179,7 +179,7 @@ function rendering() {
 }
 ```
 
-Nicht schwer oder? Wichtig dabei ist einfach nur, dass wir die PostID im Query mitgeben, dann läuft dies theoretisch von alleine. 
+Nicht schwer oder? Wichtig dabei ist einfach nur, dass wir die PostID im Query mitgeben, dann läuft dies theoretisch von alleine.&#x20;
 
 ```php
  $args = array(
@@ -191,7 +191,7 @@ Nicht schwer oder? Wichtig dabei ist einfach nur, dass wir die PostID im Query m
  $query = new WP_Query( $args );
 ```
 
-![](../.gitbook/assets/bildschirmfoto-2019-09-11-um-17.50.19.png)
+![](<../.gitbook/assets/Bildschirmfoto 2019-09-11 um 17.50.19.png>)
 
 Und hier der gesamte Code im Beispiel:
 
@@ -418,7 +418,7 @@ class edit extends Component {
 export default edit; 
 ```
 
-Deine PHP 
+Deine PHP&#x20;
 
 ```php
 <?php 
@@ -535,4 +535,3 @@ function prwp_choosepost( $attributes ) {
 }
 
 ```
-

@@ -8,11 +8,11 @@ description: >-
 
 ### Globale Panel für die Custom Post Type
 
-Falls du eine globale Seiten Einstellung machen möchtest, kannst du mittels dem Gutenberg Plugin Register neue Panels sowie neue Sidebars programmieren. 
+Falls du eine globale Seiten Einstellung machen möchtest, kannst du mittels dem Gutenberg Plugin Register neue Panels sowie neue Sidebars programmieren.&#x20;
 
-![](../.gitbook/assets/bildschirmfoto-2019-08-26-um-15.36.42.png)
+![](<../.gitbook/assets/Bildschirmfoto 2019-08-26 um 15.36.42.png>)
 
-#### Erstmal importieren wir uns alle wichtigen Dependencies 
+#### Erstmal importieren wir uns alle wichtigen Dependencies&#x20;
 
 ```javascript
 import { prwp_icon } from "../../icons/icon";
@@ -95,12 +95,12 @@ HideTitle = compose([
 ])( HideTitle )
 ```
 
-#### Und jetzt das nur für PHP :\( 
+#### Und jetzt das nur für PHP :(&#x20;
 
-Dieses Component arbeitet mittels Meta Fields von WordPress zusammen, was wir nur machen ist: Wir blenden die im Backend aus und dafür nehmen wir unsere Checkbox, die wir fürs Backend genommen haben.  
+Dieses Component arbeitet mittels Meta Fields von WordPress zusammen, was wir nur machen ist: Wir blenden die im Backend aus und dafür nehmen wir unsere Checkbox, die wir fürs Backend genommen haben. &#x20;
 
-Damit man nicht diesen komplexen PHP Script schreiben muss, gibt es hilfreiche Tools.   
-Hier eine meiner Empfehlungen: [https://jeremyhixon.com/tool/wordpress-meta-box-generator-v2-beta/](https://jeremyhixon.com/tool/wordpress-meta-box-generator-v2-beta/) 
+Damit man nicht diesen komplexen PHP Script schreiben muss, gibt es hilfreiche Tools. \
+Hier eine meiner Empfehlungen: [https://jeremyhixon.com/tool/wordpress-meta-box-generator-v2-beta/](https://jeremyhixon.com/tool/wordpress-meta-box-generator-v2-beta/)&#x20;
 
 ```php
 <?php
@@ -180,11 +180,11 @@ function myprefix_save_post_metabox($post_id, $post) {
 add_action( 'save_post', 'myprefix_save_post_metabox', 10, 2 );
 ```
 
-### Neuen Plugin Tab registrieren 
+### Neuen Plugin Tab registrieren&#x20;
 
-![](../.gitbook/assets/bildschirmfoto-2019-08-26-um-15.53.24.png)
+![](<../.gitbook/assets/Bildschirmfoto 2019-08-26 um 15.53.24.png>)
 
-Falls du gerne deine eigene Sidebar verwalten möchtest, kannst du dir in Gutenberg deine eigene Sidebar ganz einfach programmieren. Du musst nur wieder mit den Meta Fields arbeiten. Aber wie oben erklärt durch die Generatoren wird dir viel Arbeit erspart.  
+Falls du gerne deine eigene Sidebar verwalten möchtest, kannst du dir in Gutenberg deine eigene Sidebar ganz einfach programmieren. Du musst nur wieder mit den Meta Fields arbeiten. Aber wie oben erklärt durch die Generatoren wird dir viel Arbeit erspart. &#x20;
 
 ```jsx
 import { prwp_icon } from "../../icons/icon";
@@ -212,5 +212,4 @@ function prwp_gutenberg_tab_option() {
 prwp_gutenberg_tab_option();
 ```
 
-Hier kannst du zum Beispiel das "Modal" Component verschachteln und dir dein eigenes Einstellungsmenü erstellen.    
-
+Hier kannst du zum Beispiel das "Modal" Component verschachteln und dir dein eigenes Einstellungsmenü erstellen.   &#x20;

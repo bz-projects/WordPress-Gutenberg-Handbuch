@@ -8,11 +8,14 @@ description: >-
 
 **Angaben gemäß § 5 TMG**
 
-Benjamin Zekavica  
-Oranienstraß 12  
-52066 Aachen
+Benjamin Zekavica
 
-#### Kontakt
+**Hinweis:**\
+Rein private Webseiten sind zunächst von der Impressumspflicht ausgenommen. § 5 TMG spricht von geschäftsmäßigen Online-Diensten, die eine Anbieterkennzeichnung benötigen. Auch § 55 RStV geht davon aus, dass bei Webseiten, die ausschließlich persönlichen oder familiären Zwecken dienen, kein Impressum notwendig ist. ([Quelle](https://www.e-recht24.de/artikel/datenschutz/209.html))
+
+**Da die Website ausschließlich meine private Portfolioseite ist und ich ausschließlich die Seite zur Präsentation meiner kostenlosen Werke dient und ich mit der Website kein Geld verdiene, wird laut deutschem Recht kein Impressum mit einer Adresse benötigt.**
+
+**Kontakt**
 
 E-Mail: [info@benjamin-zekavica.de](mailto:info@benjamin-zekavica.de)
 
@@ -32,6 +35,4 @@ Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konk
 
 Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
 
-Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.  
-
-
+Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.\

@@ -9,11 +9,11 @@ description: >-
 
 ## Einstieg
 
-Vorerst sei gesagt, diese Funktion ist noch WIP. Allerdings ist es tatsächlich schon im WordPress Core drin. Also können wir erstmal ohne Bedenken verwenden. In diesem Tutorial wollen wir folgendes schaffen. 
+Vorerst sei gesagt, diese Funktion ist noch WIP. Allerdings ist es tatsächlich schon im WordPress Core drin. Also können wir erstmal ohne Bedenken verwenden. In diesem Tutorial wollen wir folgendes schaffen.&#x20;
 
-![](../.gitbook/assets/bildschirmfoto-2020-04-20-um-13.46.46.png)
+![](<../.gitbook/assets/Bildschirmfoto 2020-04-20 um 13.46.46.png>)
 
-Sieht auf jeden Fall nicht kompliziert aus, allerdings dies zu entwickeln braucht man tatsächlich etwas Gutenberg Erfahrung. Allerdings bietet die Funktion einfache Parameter an, die man als Gutenberg Entwickler schon weiß. 
+Sieht auf jeden Fall nicht kompliziert aus, allerdings dies zu entwickeln braucht man tatsächlich etwas Gutenberg Erfahrung. Allerdings bietet die Funktion einfache Parameter an, die man als Gutenberg Entwickler schon weiß.&#x20;
 
 ### Attribute anpassen
 
@@ -28,7 +28,7 @@ bgGradient:{
 
 ### Component importieren
 
-Als erstes müssen wir das Component importieren. Es liegt leider nicht unter **wp.components**, sondern unter **wp.blockEditor**. 
+Als erstes müssen wir das Component importieren. Es liegt leider nicht unter **wp.components**, sondern unter **wp.blockEditor**.&#x20;
 
 ```jsx
 import { 
@@ -36,9 +36,9 @@ import {
 } from '@wordpress/block-editor'; 
 ```
 
-Die Funktion die wir brauchen heißt: **\_\_experimentalGradientPicker** allerdings ist es wie bereits erwähnt eine **Testvariante** im WordPress Core. Damit ich allerdings übersichtlich damit arbeiten kann, habe ich den Schlüsselbegriff **"as"** eingegeben, sodass ich einen eigene Funktionsnamen vergeben kann. In diesem Fall habe ich es **GradientPicker** genannt. 
+Die Funktion die wir brauchen heißt: **\_\_experimentalGradientPicker** allerdings ist es wie bereits erwähnt eine **Testvariante** im WordPress Core. Damit ich allerdings übersichtlich damit arbeiten kann, habe ich den Schlüsselbegriff **"as"** eingegeben, sodass ich einen eigene Funktionsnamen vergeben kann. In diesem Fall habe ich es **GradientPicker** genannt.&#x20;
 
-Innerhalb der Return Funktion rufe ich dann im React DOM die Funktion. 
+Innerhalb der Return Funktion rufe ich dann im React DOM die Funktion.&#x20;
 
 ```jsx
 <GradientPicker
@@ -55,15 +55,15 @@ Innerhalb der Return Funktion rufe ich dann im React DOM die Funktion.
 />
 ```
 
-Wie man hier sieht sind hier die bekannten Parameter von Gutenberg & React wiederverwendet. Mit ClassName kann man eine individuelle Klasse vergeben und beim **value** sind die gespeicherte Attribute, wo tatsächlich der fertige Background CSS Code vom Farbverlauf hinterlegt wurde. 
+Wie man hier sieht sind hier die bekannten Parameter von Gutenberg & React wiederverwendet. Mit ClassName kann man eine individuelle Klasse vergeben und beim **value** sind die gespeicherte Attribute, wo tatsächlich der fertige Background CSS Code vom Farbverlauf hinterlegt wurde.&#x20;
 
-Beim OnChange holen wir uns vom Event, sobald der User einen Farbverlauf ausgewählt hat die gesamten Werte und speichern es in dem Attribut. 
+Beim OnChange holen wir uns vom Event, sobald der User einen Farbverlauf ausgewählt hat die gesamten Werte und speichern es in dem Attribut.&#x20;
 
-Der Befehl **disableCustomGradients** kann angegeben werden, wenn man tatsächlich keine eigene Farbverläufe bearbeiten möchte. Somit hat der User keine Erlaubnis dazu. 
+Der Befehl **disableCustomGradients** kann angegeben werden, wenn man tatsächlich keine eigene Farbverläufe bearbeiten möchte. Somit hat der User keine Erlaubnis dazu.&#x20;
 
-Der Befehl **clearable** ist einfach ein Button, der angezeigt wird, wenn man alle Einstellungen zurücksetzten möchte. 
+Der Befehl **clearable** ist einfach ein Button, der angezeigt wird, wenn man alle Einstellungen zurücksetzten möchte.&#x20;
 
-![](../.gitbook/assets/bildschirmfoto-2020-04-20-um-14.01.08.png)
+![](<../.gitbook/assets/Bildschirmfoto 2020-04-20 um 14.01.08.png>)
 
 ### Globale Verläufe
 
@@ -102,28 +102,27 @@ add_theme_support(
 );
 ```
 
-### Eigene Verläufe deaktivieren 
+### Eigene Verläufe deaktivieren&#x20;
 
-Auch hier handelt es sich wieder um einem Theme Support Befehl. Hier kann man bestimmen, wenn man eigene Verläufe anpassen möchte. Der Befehl heißt **disable-custom-gradients** 
+Auch hier handelt es sich wieder um einem Theme Support Befehl. Hier kann man bestimmen, wenn man eigene Verläufe anpassen möchte. Der Befehl heißt **disable-custom-gradients**&#x20;
 
 ```jsx
 // Disable Custom Gradients 
 add_theme_support('disable-custom-gradients', true);
 ```
 
-### **Einstellungen** 
+### **Einstellungen**&#x20;
 
-Hier ein Beispiel, wie man dann die Farbverläufe anpassen kann. 
+Hier ein Beispiel, wie man dann die Farbverläufe anpassen kann.&#x20;
 
-![](../.gitbook/assets/bildschirmfoto-2020-04-20-um-14.07.02.png)
+![](<../.gitbook/assets/Bildschirmfoto 2020-04-20 um 14.07.02.png>)
 
-![](../.gitbook/assets/bildschirmfoto-2020-04-20-um-14.07.09.png)
+![](<../.gitbook/assets/Bildschirmfoto 2020-04-20 um 14.07.09.png>)
 
 ### Ausgabe
 
-Da im Attribut der CSS Code tatsächlich hinterlegt wurde, kann man ihm dann als inline CSS Attribut ausgeben.  
+Da im Attribut der CSS Code tatsächlich hinterlegt wurde, kann man ihm dann als inline CSS Attribut ausgeben. &#x20;
 
 ```jsx
 <section style={ background: props.attributes.bgGradient }
 ```
-

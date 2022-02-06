@@ -4,13 +4,13 @@ description: Neue Block Preview Ansicht – Beispiel Inhalte generieren in der V
 
 # Block Picker Preview
 
-![](../.gitbook/assets/bildschirmfoto-2020-04-20-um-17.31.48.png)
+![](<../.gitbook/assets/Bildschirmfoto 2020-04-20 um 17.31.48.png>)
 
-Seit der neuen Version von Gutenberg wurde der Gutenberg Block Picker öfters überarbeitet. Diesmal gibt es eine Block Preview, die man als Entwickler zusätzlich noch anpassen kann. Diese Funktion ist optional, allerdings empfohlen! 
+Seit der neuen Version von Gutenberg wurde der Gutenberg Block Picker öfters überarbeitet. Diesmal gibt es eine Block Preview, die man als Entwickler zusätzlich noch anpassen kann. Diese Funktion ist optional, allerdings empfohlen!&#x20;
 
-Denn durch die Vorschau weiß der Redakteur direkt bescheid, was für ein Block derzeit ausgewählt wurde. 
+Denn durch die Vorschau weiß der Redakteur direkt bescheid, was für ein Block derzeit ausgewählt wurde.&#x20;
 
-Diese Funktion ist abhängig von deinen Attributen. Diese musst du einfach erneut innerhalb dem **example** Befehl auflisten und einen Vorschau Inhalt eingeben. Hier ein Beispiel: 
+Diese Funktion ist abhängig von deinen Attributen. Diese musst du einfach erneut innerhalb dem **example** Befehl auflisten und einen Vorschau Inhalt eingeben. Hier ein Beispiel:&#x20;
 
 ```jsx
 import './style.scss';
@@ -76,5 +76,4 @@ registerBlockType( 'prwp-blocks/iconpicker', {
 	}
 ```
 
-That's it! Easy und vor allem schnell erledigt. Allerdings sobald Ihr den Block auswählt, werden die Inhalte dann im Bearbeitungseditor nicht angezeigt. **Diese Inhalte sind ausschließlich für die Vorschau gedacht.** 
-
+That's it! Easy und vor allem schnell erledigt. Allerdings sobald Ihr den Block auswählt, werden die Inhalte dann im Bearbeitungseditor nicht angezeigt. **Diese Inhalte sind ausschließlich für die Vorschau gedacht.**&#x20;

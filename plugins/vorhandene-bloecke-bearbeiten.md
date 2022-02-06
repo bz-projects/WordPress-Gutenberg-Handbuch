@@ -6,25 +6,25 @@ description: >-
 
 # Vorhandene Blöcke bearbeiten
 
-![](../.gitbook/assets/bildschirmfoto-2019-09-10-um-15.25.23.png)
+![](<../.gitbook/assets/Bildschirmfoto 2019-09-10 um 15.25.23.png>)
 
 ### Attribute
 
-Als Erstes müssen wir wissen welchen Block wir bearbeiten wollen und welche Einstellungen wir extra benötigen. Wie gewohnt funktioniert das Hook System von React wie damals in PHP. 
+Als Erstes müssen wir wissen welchen Block wir bearbeiten wollen und welche Einstellungen wir extra benötigen. Wie gewohnt funktioniert das Hook System von React wie damals in PHP.&#x20;
 
-Diese Methode mit dem Extend wird Dank dem React HighOrderComponent ermöglicht. Weitere Informationen findest du hier.   
+Diese Methode mit dem Extend wird Dank dem React HighOrderComponent ermöglicht. Weitere Informationen findest du hier.  &#x20;
 
-![](../.gitbook/assets/bildschirmfoto-2019-09-10-um-15.33.01.png)
+![](<../.gitbook/assets/Bildschirmfoto 2019-09-10 um 15.33.01.png>)
 
-Ich wollte zum Beispiel eine Trennlinie hinzufügen zum Abstand Block. Als Erstes habe ich mir alle vorhandenen Attribute ausgeben lassen. Gehe dazu im Backend und füge deinen gewünschten Block hinzu. Und gebe folgenden Snippet in deiner JavaScript Konsole ein. 
+Ich wollte zum Beispiel eine Trennlinie hinzufügen zum Abstand Block. Als Erstes habe ich mir alle vorhandenen Attribute ausgeben lassen. Gehe dazu im Backend und füge deinen gewünschten Block hinzu. Und gebe folgenden Snippet in deiner JavaScript Konsole ein.&#x20;
 
 ```javascript
 wp.data.select('core/block-editor').getBlocks();
 ```
 
-So jetzt wissen wir welche **Attribute** verfügbar sind. Mit diesen können wir ganz einfach weiterarbeiten. Damit ich aber eine neue Attribute hinzufügen kann, muss ich folgendes tun, damit meine Änderungen gespeichert werden. 
+So jetzt wissen wir welche **Attribute** verfügbar sind. Mit diesen können wir ganz einfach weiterarbeiten. Damit ich aber eine neue Attribute hinzufügen kann, muss ich folgendes tun, damit meine Änderungen gespeichert werden.&#x20;
 
-1. Importiere dir alle Dependencies  
+1. Importiere dir alle Dependencies &#x20;
 
 ```jsx
 import { createHigherOrderComponent } from '@wordpress/compose';
@@ -33,7 +33,7 @@ import { InspectorControls } from '@wordpress/block-editor';
 import { PanelBody, ToggleControl } from '@wordpress/components';
 ```
 
-  2. Code anpassen & Block zuweisen \| **blocks.registerBlockType**
+&#x20; 2\. Code anpassen & Block zuweisen | **blocks.registerBlockType**
 
 ```jsx
 function spacerAttr( props ) {
@@ -50,17 +50,17 @@ function spacerAttr( props ) {
 wp.hooks.addFilter('blocks.registerBlockType', 'prwp/spaceractive', spacerAttr );
 ```
 
-### Backend Einstellungen anpassen \| editor.BlockEdit 
+### Backend Einstellungen anpassen | editor.BlockEdit&#x20;
 
-Jetzt können wir schon experimentieren im Backend. Hier musst du ebenfalls einen Hook aktivieren und mit denen weiterarbeiten. Mit dem Hook editor.BlockEdit kannst du die gesamte Ansicht im Backend manipulieren. 
+Jetzt können wir schon experimentieren im Backend. Hier musst du ebenfalls einen Hook aktivieren und mit denen weiterarbeiten. Mit dem Hook editor.BlockEdit kannst du die gesamte Ansicht im Backend manipulieren.&#x20;
 
-In dem HighOrderComponent musst du zwingend einen Parameter mitgeben, sonst werden die anderen Inhalte vom Core Block nicht extended! Danach musst du einfach an einer Stelle deiner Wahl den Inhalt kopieren mittels JS. 
+In dem HighOrderComponent musst du zwingend einen Parameter mitgeben, sonst werden die anderen Inhalte vom Core Block nicht extended! Danach musst du einfach an einer Stelle deiner Wahl den Inhalt kopieren mittels JS.&#x20;
 
 ```jsx
 <BlockEdit { ...props } />
 ```
 
-Hier zur Verdeutlichung: 
+Hier zur Verdeutlichung:&#x20;
 
 ```jsx
 const override =  createHigherOrderComponent( ( BlockEdit ) => {const override =  createHigherOrderComponent( ( BlockEdit ) => {
@@ -106,7 +106,7 @@ wp.hooks.addFilter( 'editor.BlockEdit', 'core/spacer', override );
 
 ### Render / Save Funktion überschreiben
 
-Damit wir die Save Funktion überschreiben können wird empfohlen hier Dynamische Blöcke zu verwenden.  Hier ist es ziemlich einfach, quasi das selbe Spiel wie man gewohnt ist von den Dynamic Blocks. Wichtig ist, dass man weiß, wie die Attribute heißen. Den Code Snippet findest du ganz oben  ausführlich erklärt. 
+Damit wir die Save Funktion überschreiben können wird empfohlen hier Dynamische Blöcke zu verwenden.  Hier ist es ziemlich einfach, quasi das selbe Spiel wie man gewohnt ist von den Dynamic Blocks. Wichtig ist, dass man weiß, wie die Attribute heißen. Den Code Snippet findest du ganz oben  ausführlich erklärt.&#x20;
 
 ```php
 // INT 
@@ -143,7 +143,6 @@ function prwp_seperator_override_render( $attributes, $content ) {
 } 
 ```
 
-Und wir sind fertig :\) 
+Und wir sind fertig :)&#x20;
 
-![](../.gitbook/assets/bildschirmfoto-2019-09-10-um-15.25.28.png)
-
+![](<../.gitbook/assets/Bildschirmfoto 2019-09-10 um 15.25.28.png>)

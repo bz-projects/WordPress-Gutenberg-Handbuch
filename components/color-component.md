@@ -4,15 +4,15 @@ description: Farbeinstellungen vornehmen
 
 # Color Component
 
-![](../.gitbook/assets/colors.jpg)
+![](../.gitbook/assets/colors.JPG)
 
 ## Einleitung
 
-Heute wollen zu unserem Block eine Art von Color Picker hinzufügen, allerdings etwas eleganter und mit einer Auswahl an Standardfarben, die wir mittels [CSS Variablen ](color-palette-css-variablen-in-gutenberg.md)herauslesen. 
+Heute wollen zu unserem Block eine Art von Color Picker hinzufügen, allerdings etwas eleganter und mit einer Auswahl an Standardfarben, die wir mittels [CSS Variablen ](color-palette-css-variablen-in-gutenberg.md)herauslesen.&#x20;
 
 ### Komponenten importieren
 
-Zunächst importieren wir uns die Komponenten aus Gutenberg, die wir benötigen: 
+Zunächst importieren wir uns die Komponenten aus Gutenberg, die wir benötigen:&#x20;
 
 ```javascript
 const { ColorPalette } = wp.blockEditor;
@@ -59,4 +59,3 @@ attributes: {
 		</h4>
 	</Fragment>
 ```
-

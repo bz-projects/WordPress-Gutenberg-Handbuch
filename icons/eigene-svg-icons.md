@@ -6,12 +6,12 @@ description: Hier eine kurze Anleitung bezüglich SVG Files in Gutenberg.
 
 ### Eigenes SVG
 
-Falls du ein Icon in Gutenberg einbauen möchtest, ist es empfohlen dies als Funktion  abzuspeichern, um sie dann in anderen Dateien zu importieren zu können. 
+Falls du ein Icon in Gutenberg einbauen möchtest, ist es empfohlen dies als Funktion  abzuspeichern, um sie dann in anderen Dateien zu importieren zu können.&#x20;
 
-Wichtig ist, dass das SVG JSV konform ist. Dafür gibt es einen tollen Generator, der wirklich das abdeckt und dir ein sauberes kompatibles SVG liefert.   
-[**Hier geht es zum Generator.**](https://www.smooth-code.com/open-source/svgr/playground/)\*\*\*\*
+Wichtig ist, dass das SVG JSV konform ist. Dafür gibt es einen tollen Generator, der wirklich das abdeckt und dir ein sauberes kompatibles SVG liefert. \
+[**Hier geht es zum Generator.**](https://www.smooth-code.com/open-source/svgr/playground/)****
 
-#### Hier ein Beispiel: 
+#### Hier ein Beispiel:&#x20;
 
 ```jsx
 export function icon() {
@@ -45,9 +45,9 @@ export function icon() {
 
 ### WordPress SVG Component
 
-Gutenberg hat schon eine interne SVG Function, die du verwenden kannst:   
-Weitere Informationen findest du in der offiziellen Doku.   
-  
+Gutenberg hat schon eine interne SVG Function, die du verwenden kannst: \
+Weitere Informationen findest du in der offiziellen Doku. \
+\
 [Hier geht es zur Doku!](https://github.com/WordPress/gutenberg/tree/master/packages/components/src/primitives/svg)
 
 ```jsx
@@ -67,4 +67,3 @@ const MyIcon = () => (
 	</SVG>
 );
 ```
-

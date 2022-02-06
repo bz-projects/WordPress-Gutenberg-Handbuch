@@ -18,9 +18,9 @@ Im Gutenberg Editor ändern sich andauert neue Dinge, die die Entwicklung schwie
 **In dieser Dokumentation schauen wir uns folgende Dinge an:**
 
 * Erweiterte Funktionen und deren richtige Anwendung in JSX
-* JSX Basis \( Conditionals, Ausgaben, Schleifen ... \)
+* JSX Basis ( Conditionals, Ausgaben, Schleifen ... )
 * Dynamic Blocks / Erweitert
-* Gutenberg Blöcke wurden unerwartet bearbeiten \( Lösung\)
+* Gutenberg Blöcke wurden unerwartet bearbeiten ( Lösung)
 * Mit React richtig arbeiten
 * React Plugins & Components aus der Community in WP anwenden
 * Und extrem vieles mehr
@@ -31,5 +31,4 @@ Derzeit implementiere ich alle nötigen Snippets von Gutenberg in einem Plugin. 
 
 [WordPress Gutenberg Snippets für den Visual Studios Code herunterladen.](https://marketplace.visualstudio.com/items?itemName=BenjaminZekavica.wordpress-gutenberg-snippets)
 
-![Weitere Updates sollen demn&#xE4;chst folgen mit mehr Snippets ...](.gitbook/assets/bildschirmfoto-2019-09-03-um-12.00.11.png)
-
+![Weitere Updates sollen demnächst folgen mit mehr Snippets ...](<.gitbook/assets/Bildschirmfoto 2019-09-03 um 12.00.11.png>)
