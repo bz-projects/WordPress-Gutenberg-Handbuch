@@ -1,38 +1,62 @@
----
-description: >-
-  Hinweis: Dies ist keine offizielle Doku von WordPress. Dies ist eine Sammlung
-  meiner persönlichen Erfahrungen und Learnings.
----
-
 # Kontakt & Impressum
 
-**Angaben gemäß § 5 TMG**
+UnleashWP ist ein Projekt von:\
+[**Kreo Pulse**](https://www.kreo-pulse.com/) **|** [**Benjamin Zekavica**](https://www.benjamin-zekavica.de/)
+
+_**UnleashWP ist ein unabhängiges Projekt von**_ [_**Benjamin Zekavica**_](https://www.benjamin-zekavica.de/)\
+&#xNAN;_**und steht in keiner Verbindung zur WordPress Foundation oder Automattic Inc.**_
+
+Kreo Pulse | Benjamin Zekavica\
+Medien- und Softwareproduktion\
+Albert-Einstein-Straße 47\
+c/o Autorenglück #31329\
+02977 Hoyerswerda, Deutschland
+
+#### Kontakt
+
+E-Mail: [office@unleash-wp.com](mailto:office@unleash-wp.com)
+
+#### Umsatzsteuer-ID
+
+Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:\
+DE 358 256 337
+
+#### Gewerbeanmeldung
+
+Die Gewerbeerlaubnis nach § 14 GewO GewO wurde am\
+01.09.2025 von folgender Stelle erteilt:\
+Gewerbeamt, Stadt Aachen.
+
+#### Berufsbezeichnung und berufsrechtliche Regelungen
+
+Berufsbezeichnung: Medienproduzent
+
+#### Angaben zur Berufs­haftpflicht­versicherung
+
+**Name und Sitz des Versicherers:**\
+HISCOX SA\
+Bernhard-Wicki-Straße 3\
+80636 München
+
+#### Redaktionell verantwortlich:
 
 Benjamin Zekavica
 
-**Hinweis:**\
-Rein private Webseiten sind zunächst von der Impressumspflicht ausgenommen. § 5 TMG spricht von geschäftsmäßigen Online-Diensten, die eine Anbieterkennzeichnung benötigen. Auch § 55 RStV geht davon aus, dass bei Webseiten, die ausschließlich persönlichen oder familiären Zwecken dienen, kein Impressum notwendig ist. ([Quelle](https://www.e-recht24.de/artikel/datenschutz/209.html))
+#### Verbraucher­streit­beilegung/Universal­schlichtungs­stelle
 
-**Da die Website ausschließlich meine private Portfolioseite ist und ich ausschließlich die Seite zur Präsentation meiner kostenlosen Werke dient und ich mit der Website kein Geld verdiene, wird laut deutschem Recht kein Impressum mit einer Adresse benötigt.**
+Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
 
-**Kontakt**
+#### Bildnachweise
 
-E-Mail: [info@benjamin-zekavica.de](mailto:info@benjamin-zekavica.de)
+**Envato Elements**\
+Einzelne Icons, Illustrationen und Templates stammen aus dem Angebot von [Envato Elements](https://elements.envato.com/) (Envato Pty Ltd.). Die Nutzung erfolgte im Rahmen einer gültigen Lizenz, projektbezogen registriert für _UnleashWP_ (Kreo Pulse | Benjamin Zekavica). Teile des Materials wurden farblich angepasst oder grafisch verändert. Eine gesonderte Nennung der einzelnen Autoren ist gemäß den Lizenzbedingungen nicht erforderlich. Alle Inhalte wurden ausschließlich für dieses Projekt lizenziert und werden nicht für Merchandising, Weiterverkauf oder eigenständige Distribution verwendet.
 
-#### Haftung für Inhalte
+**Fotografien aus der Community**
 
-Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+Ein Teil des Bildmaterials stammt aus den offiziellen Flickr-Archiven von _WordCamp Europe 2024 und 2025_ sowie _WordCamp Germany 2023_.\
+Dabei wurden insbesondere Bilder von folgenden Fotografen verwendet:\
+Nilo Vélez, Val Vesa, Pantelis Orfanos, Gina Bialas, Roberto Vázquez, Claudio Schwarz, Fede Padilla, Kostas Fryganiotis, Sebastián Echeverri Jaramillo, Paco Marchante, Anastasiya Kolomoytseva, Selena Salustri, Stefano Cassone, Sandro Lucifora, Benjamin Zekavica, Manja Neumann, Hendrik Luehrsen und Shiva Backhaus – mit freundlicher Genehmigung von Matt Mullenweg (Automattic).
 
-Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+Alle Fotografen sind auf der Website des _WordCamp Europe 2024_ unter „Organizers“ aufgeführt und oben namentlich erwähnt. Die Nutzung erfolgte ausschließlich auf Grundlage der jeweils geltenden **Creative-Commons-Lizenzen (CC BY 2.0 bzw. CC0)** oder ausdrücklich freigegebener Nutzungsrechte.
 
-#### Haftung für Links
-
-Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.
-
-Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
-
-#### Urheberrecht
-
-Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
-
-Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.\
+**Alle Bilder dienen ausschließlich der redaktionellen, nicht-werblichen Illustration des Community-Kontextes.**
